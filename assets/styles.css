@@ -1,0 +1,97 @@
+body{
+    font-size: 18px;
+    color:#2D3748;
+    font-family:-apple-system,
+    BlinkMacSystemFont,"Segoe UI",
+    Roboto,"Helvetica Neue",
+    Arial,"Noto Sans",sans-serif;
+    padding:0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 70% 25%; /* single column layout */
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-gap: 5%;
+
+}
+header{
+    grid-area: header;
+    background-color: #63B3ED;
+    color:#FFFFFF;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    padding-right:5%;
+    padding-left: 5%;
+    margin-bottom:2%;
+}
+
+aside{
+    grid-area: aside;
+    padding-right:5%;
+    padding-left: 5%;
+}
+#profile-img{
+    margin:10px;
+    width:12%;
+    border:2px solid #63B3ED;
+    border-radius: 100%;
+}
+
+.container > h1{
+    font-size: 36px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+article>#rustLogo{
+    float:left;
+    margin:15px;
+    width: 20%;
+}
+article>#tsLogo{
+    float:right;
+    margin:15px;
+    width: 15%;
+}
+
+article> h2{
+    font-size: 32px;
+    color:#48BB78;
+}
+article> cite{
+    color:#718096;
+}
+#about{
+    padding:15px;
+    background-color: #E2E8F0;
+}
+aside>#social-media>h3,#archives>h3,h3{
+    color:#48BB78;
+    font-family: Georgia,
+    'Times New Roman', Times, serif;
+}
+#about>h3{
+    color:#000000;
+}
+aside>#social-media>ul,#archives>ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+aside>#social-media>ul>li>a,#archives>ul>li>a{
+    text-decoration: none;
+    color:#4299E1;
+}
+
+footer{
+    grid-area: footer;
+    background-color:#2C5282;
+    color:#FFFFFF;
+    padding-left: 20%;
+}
